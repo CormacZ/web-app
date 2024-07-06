@@ -1,4 +1,5 @@
-// Example Rust backend using Actix-Web framework
+// backend/src/main.rs
+
 use actix_web::{web, App, HttpServer, Responder};
 
 mod utils;
