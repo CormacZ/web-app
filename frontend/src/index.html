@@ -1,25 +1,62 @@
-<!-- frontend/src/index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Assembly Example</title>
-    <!-- Add CSS stylesheets or links here -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Additional stylesheets or meta tags can be included here -->
 </head>
 <body>
-    <div id="app">
-        <!-- Yew will render the Rust-generated content here -->
-    </div>
-    <script type="module">
-        // Load Rust-generated WebAssembly and start the application
-        import init from "./pkg/web_app_frontend.js";
-        
-        async function run() {
-            await init();
-        }
-        
-        run();
-    </script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Web Assembly Example</h1>
+            <p>This is a simple example demonstrating the use of WebAssembly with Rust for frontend development.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Data Analysis</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Assembly Example. All rights reserved.</p>
+    </footer>
+
+    <!-- Additional scripts or JavaScript can be included here -->
 </body>
 </html>
