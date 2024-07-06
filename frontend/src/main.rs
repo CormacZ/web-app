@@ -1,4 +1,5 @@
-// Example Rust frontend code using Yew framework
+// frontend/src/main.rs
+
 use yew::prelude::*;
 
 struct Model {
