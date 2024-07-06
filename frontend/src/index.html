@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Assembly Example</title>
+    <!-- Add CSS stylesheets or links here -->
+</head>
+<body>
+    <div id="app">
+        <!-- Yew will render the Rust-generated content here -->
+    </div>
+    <script type="module">
+        // Load Rust-generated WebAssembly and start the application
+        import init from "./pkg/web_app_frontend.js";
+        
+        async function run() {
+            await init();
+        }
+        
+        run();
+    </script>
+</body>
+</html>
