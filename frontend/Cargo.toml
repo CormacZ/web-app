@@ -4,6 +4,4 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-# Add dependencies for frontend frameworks like Yew or Seed, if using
-# Example:
-# yew = "0.19"
+yew = "0.19"
