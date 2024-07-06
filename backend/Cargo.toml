@@ -1,1 +1,9 @@
+[package]
+name = "web-app-backend"
+version = "0.1.0"
+edition = "2018"
 
+[dependencies]
+# Add dependencies for backend frameworks like Actix-Web or Rocket, if using
+# Example:
+# actix-web = "4.0"
