@@ -1,1 +1,7 @@
+# Rust / Cargo generated files
+/target/
+/pkg/
 
+# IDE/Editor files
+.idea/
+.vscode/
